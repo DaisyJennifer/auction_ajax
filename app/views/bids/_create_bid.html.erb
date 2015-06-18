@@ -1,2 +1,9 @@
-<div class="small-2 columns"><span class="prefix">$</span></div>
-<div class="small-10 columns"><%= f.text_field :amount %></div>
+
+<%= form_for @bid do |f| %>
+  <%= f.hidden_field :item_id %>
+  <div class="row collapse">
+    <div class="small-2 columns"><span class="prefix">$</span></div>
+    <div class="small-10 columns"><%= f.text_field :amount %></div>
+  </div>
+  <%= f.submit "Submit Bid!", class: "button success small" %>
+<% end %>

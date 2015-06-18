@@ -27,6 +27,7 @@
   </div>
 
   <h3>Your Bid</h3>
+
   <div>
     <%= form_for @bid, remote: true do |f| %>
       <%= f.hidden_field :item_id %>
@@ -37,6 +38,11 @@
     <% end %>
  </div>
 
+
+
+  <!-- <div id="create-bid-container">
+    <%= render '/bids/create_bid' %>
+  </div> -->
 
 </div>
 <div class="small-4 columns">
