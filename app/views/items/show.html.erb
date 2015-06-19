@@ -22,13 +22,13 @@
 
   <h3>Highest bid</h3>
   <div id="high-bid-container">
-    <%= render 'bids/highest_bid', locals:{item: @item} %>
+    <%= render 'bids/highest_bid' %>
   </div>
 
 
   <h3>Your Bid</h3>
   <div id="create-bid-container">
-    <%= render partial: '/bids/create_bid', locals:{item: @item} %>
+    <%= render partial: '/bids/create_bid' %>
   </div>
 
 <div class="small-4 columns">
