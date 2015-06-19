@@ -1,2 +1,2 @@
-$("#high-bid-container").html("<%= j(render 'highest_bid', local:{item: @item}) %>");
 $("#create-bid-container").html("<%= j(render 'create_bid', local:{amount: @item.next_bid_amount}) %>")
+$("#high-bid-container").html("<%= j(render 'highest_bid') %>");
